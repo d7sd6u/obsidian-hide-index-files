@@ -1,8 +1,8 @@
 {
 	"id": "hide-index-files",
-	"name": "Index Files",
+	"name": "Hide Index Files",
 	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
+	"minAppVersion": "1.8.0",
 	"description": "Hide index files (folder notes) more reliably.",
 	"author": "d7sd6u",
 	"authorUrl": "https://github.com/d7sd6u",
