@@ -15,7 +15,10 @@ export default class Main extends PluginWithSettings({}) {
 						next.apply(this, args);
 						if (isIndexFile(args[0])) {
 							const item = this.fileItems[args[0].path];
-							if (item) item.el.style.display = "none";
+							if (item)
+								item.el.classList.add(
+									"hide-index-file-tree-item",
+								);
 						}
 					};
 				},
@@ -25,9 +28,13 @@ export default class Main extends PluginWithSettings({}) {
 						const item = this.fileItems[args[0].path];
 						if (item)
 							if (isIndexFile(args[0])) {
-								item.el.style.display = "none";
+								item.el.classList.add(
+									"hide-index-file-tree-item",
+								);
 							} else {
-								item.el.style.display = "";
+								item.el.classList.remove(
+									"hide-index-file-tree-item",
+								);
 							}
 					};
 				},
